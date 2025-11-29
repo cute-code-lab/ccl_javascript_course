@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Javascript Intro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Javascript Introduction</h1>
+      <div class="hero">
+        <h2>⭐ What Is JavaScript?</h2>
+        <p class="intro">
+          JavaScript is a
+          <strong>light-weight, versatile programming language</strong> used to
+          make websites <span>interactive, dynamic, and functional</span>. It
+          runs directly inside your web browser (like Chrome, Firefox, Safari),
+          which makes it one of the core technologies of the web—alongside
+          <span>HTML and CSS</span>. It can run on many different platforms and
+          environments:
+        </p>
+        <ul>
+          <li>Web browsers (client-side)</li>
+          <li>Servers through Node.js (server-side)</li>
+          <li>Mobile apps</li>
+          <li>Desktop apps</li>
+          <li>Embedded devices</li>
+        </ul>
+        <div class="btns">
+          <div>
+            <span>HTML: Structure🪵🔨 </span>
+            ➡️
+            <button id="html">Click me</button>
+          </div>
+          <div>
+            <span>CSS: Style & Design 💅</span>
+            ➡️
+            <button id="css">Click me</button>
+          </div>
+          <div>
+            <span>JavaScript: Interactivity & Functionality ☄️</span>
+            ➡️
+            <button id="js">Click me</button>
+
+            <h4 id="reveal">Hello World!</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <!-- WHAT CAN JAVASCRIPT DO? -->
+      <section id="what-js-can-do">
+        <h2>⚡ What Can JavaScript Do?</h2>
+
+        <p>
+          JavaScript is the programming language of the web. It helps websites
+          come alive by calculating data, updating content, and responding to
+          user actions. With JavaScript, we can change HTML, update CSS, and
+          control how elements appear on the page.
+        </p>
+
+        <div class="list">
+          <div>
+            <h3>1. Change HTML content:</h3>
+            <p>
+              For example, we can select an element using
+              <code>getElementById()</code> and update its text.
+            </p>
+            <pre><code>document.getElementById("change-html").innerHTML = 2;</code></pre>
+            <div id="cart-container">
+              <span id="cart"> 🛒</span> <span id="change-html">1</span>
+            </div>
+            <button class="btn" id="change-html-btn">Add To Cart</button>
+          </div>
+
+          <div>
+            <h3>2. Change HTML attributes:</h3>
+            <p>
+              Try switching the <code>src</code> of an image to show something
+              different.
+            </p>
+            <pre><code>document.getElementById("demo").src = "img.png";</code></pre>
+            <img
+              id="change-attribute"
+              src="/assets/images/outline-heart.png"
+              alt="favorite"
+            />
+            <button class="btn" id="change-attribute-btn">Like</button>
+          </div>
+
+          <div>
+            <h3>3. Change styles (CSS):</h3>
+            <p>JavaScript can adjust fonts, colors, spacing, and more.</p>
+            <pre><code>document.getElementById("demo").style.fontSize = "35px";</code></pre>
+            <nav id="nav">
+              <span>Home</span>
+              <span>Products</span>
+              <span>Services</span>
+              <span>About</span>
+              <span>Contact</span>
+            </nav>
+          </div>
+
+          <div>
+            <h3>4. Hide & Show Elements:</h3>
+            <p>
+              We can make elements disappear by changing the display, and we can
+              bring them back whenever we need.
+            </p>
+            <pre><code>document.getElementById("demo").style.display = "none";</code></pre>
+            <pre><code>document.getElementById("demo").style.display = "block";</code></pre>
+            <div id="hide-element">
+              <h4>Learn JavaScript Fast!</h4>
+              <button class="btn" id="hide-element-btn">X</button>
+            </div>
+            <button class="btn" id="show-element-btn">Show</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT IS JAVASCRIPT -->
+    </main>
+  </body>
+</html>
