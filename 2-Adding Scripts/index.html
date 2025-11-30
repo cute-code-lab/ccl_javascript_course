@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Adding Scripts</title>
+    <!-- SCRIPTS -->
+    <script>
+      const func = () => {
+        window.alert("This is an internal script inside the head tag.");
+      };
+    </script>
+    <script src="/2-Adding Scripts/script1.js"></script>
+    <!-- SCRIPTS -->
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html"
+          ><img src="/assets/images/logo.png" alt="logo" class="logo"
+        /></a>
+        <h1>JavaScript Tutorial</h1>
+      </div>
+      <div class="intro">
+        <h2>Adding Scripts to HTML</h2>
+        <p>
+          💡In this lesson, we will learn four methods for adding JavaScript
+          files to an HTML document using the <code>&lt;script&gt;</code> tag.
+        </p>
+        <ul>
+          <li>An html file can have multiple script tags.</li>
+          <li>
+            Scripts can be written directly inside the HTML file or can be
+            linked as external files.
+          </li>
+          <li>
+            Internal and external scripts can be placed in the
+            <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> tags.
+          </li>
+          <li>
+            Code for internal scripts is placed inside script tags :
+            <code>&lt;script&gt;</code>
+            <code>&lt;/script&gt;</code>
+          </li>
+          <li>
+            Code for external scripts is placed inside an external file and
+            linked using the <code>src</code> attribute of the:
+            <code>&lt;script src="myScript.js"&gt;&lt;/script&gt;</code>
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </header>
+
+    <main>
+      <!-- RUN INTERNAL SCRIPT IN HEAD TAG -->
+      <section>
+        <h2>1. Internal Script in the Head Tag</h2>
+        <p>
+          You can add JavaScript code directly within the
+          <code>&lt;head&gt;</code> section of your HTML document using the
+          <code>&lt;script&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+
+        <button class="btn" type="button" onclick="func()">Run Script</button>
+      </section>
+      <!-- RUN INTERNAL SCRIPT IN BODY TAG -->
+      <section>
+        <h2>2. Internal Script in the Body Tag</h2>
+        <p>
+          You can also add JavaScript code directly within the
+          <code>&lt;body&gt;</code> section of your HTML document using the
+          <code>&lt;script&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+
+        <button class="btn" type="button" onclick="func2()">Run Script</button>
+      </section>
+      <!-- RUN EXTERNAL SCRIPTS IN HEAD & BODY TAGS -->
+      <section>
+        <h2>3. External Script Files</h2>
+        <p>
+          You can link to an external JavaScript file using the
+          <code>src</code> attribute of the <code>&lt;script&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+
+        <button class="btn" type="button" onclick="func3()">
+          Run External Script from Head
+        </button>
+        <button class="btn" type="button" onclick="func4()">
+          Run External Script from Body
+        </button>
+      </section>
+
+      <!-- BEST PRACTICE -->
+      <section>
+        <hr />
+        <h2>✔️ Best Practice</h2>
+        <p>
+          It is best to use <strong>external scripts</strong> and place them in
+          the <code>&lt;/head&gt;</code> tag.
+        </p>
+        <ul>
+          <li>Best practice for production</li>
+          <li>Reusable across pages</li>
+          <li>Cached by the browser (much faster)</li>
+          <li>Cleaner code structure (HTML, CSS, JS separated)</li>
+          <li>Easier to debug</li>
+          <li>Works better with frameworks, version control, and deployment</li>
+        </ul>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section>
+        <hr />
+        <h2>🎯 Challenge</h2>
+        <p>
+          Create an HTML file that includes four script tags demonstrating each
+          of the four methods of adding JavaScript to an HTML document. Each
+          script should display an alert message when a button is clicked.
+        </p>
+        <p>Make sure to include:</p>
+        <ul>
+          <li>An internal script in the head tag</li>
+          <li>An internal script in the body tag</li>
+          <li>An external script linked in the head tag</li>
+          <li>An external script linked in the body tag</li>
+        </ul>
+        <p>Test your HTML file to ensure all scripts work correctly.</p>
+      </section>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script>
+      const func2 = () => {
+        window.alert("This is an internal script inside the body tag.");
+      };
+    </script>
+
+    <script src="/2-Adding Scripts/script2.js"></script>
+    <!-- SCRIPTS -->
+  </body>
+</html>

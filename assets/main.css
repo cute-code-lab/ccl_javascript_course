@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap") * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: rgb(238, 227, 227);
+}
+
+.logo {
+  width: 50px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+main,
+.intro {
+  padding: 0 1rem;
+  max-width: 1000px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgb(94, 92, 92);
+  padding-bottom: 5px;
+}
+
+header h2 {
+  color: palevioletred;
+}
+
+code {
+  background-color: rgb(50, 48, 48);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+strong {
+  color: palevioletred;
+}
+
+ol,
+ul {
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  background-color: palevioletred;
+  color: black;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(216, 112, 147, 0.8);
+  transition: all;
+  transition-duration: 5ms;
+}
