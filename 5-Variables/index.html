@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Variables</title>
+    <script src="/5-Variables/script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" alt="logo" class="logo" />
+        </a>
+        <h1>JavaScript Tutorial</h1>
+      </div>
+
+      <div class="intro">
+        <h2>Variables</h2>
+        <p>
+          🧪 Variables allow us to store data so we can use it later in our
+          program. They act like containers that hold values such as text,
+          numbers, or true/false information.
+        </p>
+
+        <ul>
+          <li>A variable stores data that you can reuse or update later.</li>
+          <li>
+            Use <code>let</code> and <code>const</code> to declare variables.
+          </li>
+          <li>
+            Variable names must follow rules: no spaces, must start with a
+            letter, $, or _.
+          </li>
+          <li>
+            Use <code>const</code> for values that should NOT change and
+            <code>let</code> for values that WILL change.
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+    </header>
+
+    <main>
+      <!-- WHAT ARE VARIABLES -->
+      <section>
+        <h3>1️⃣ What Are Variables?</h3>
+        <p>
+          Variables store information so you can use it later. Think of them as
+          labeled boxes that hold values.
+        </p>
+
+        <p><code>let username = "Alex";</code></p>
+        <p><code>const year = 2025;</code></p>
+      </section>
+
+      <!-- DECLARING VARIABLES -->
+      <section>
+        <h3>2️⃣ How to Declare Variables</h3>
+
+        <p>
+          JavaScript uses the keywords <strong>let</strong> and
+          <strong>const</strong> to create variables.
+        </p>
+
+        <p><code>let score = 10; // this value can change</code></p>
+        <p><code>const pi = 3.14; // this value cannot change</code></p>
+
+        <strong>
+          <p>
+            ❗Always use <code>const</code> unless you know the value will
+            change.
+          </p>
+        </strong>
+      </section>
+
+      <!-- NAMING RULES -->
+      <section>
+        <h3>3️⃣ Naming Variables</h3>
+        <p>A variable name must follow these rules:</p>
+
+        <ul>
+          <li>Must start with a letter, <code>$</code>, or <code>_</code></li>
+          <li>No spaces (use camelCase instead)</li>
+          <li>Cannot start with numbers (❌ <code>1name</code>)</li>
+          <li>Case-sensitive (<code>Name</code> ≠ <code>name</code>)</li>
+        </ul>
+
+        <p>✔️ Good examples:</p>
+        <p><code>let userName;</code></p>
+        <p><code>let totalScore;</code></p>
+
+        <p>❌ Bad examples:</p>
+        <p><code>let user name;</code></p>
+        <p><code>let 3total;</code></p>
+      </section>
+
+      <!-- LET VS CONST -->
+      <section>
+        <h3>4️⃣ let vs const</h3>
+        <p>Use <strong>let</strong> when the value will change:</p>
+        <p><code>let count = 1;</code></p>
+        <p><code>count = 2;</code></p>
+
+        <p>Use <strong>const</strong> when the value stays the same:</p>
+        <p><code>const country = "Thailand";</code></p>
+        <p><code>// country = "Japan"; ❌ Not allowed</code></p>
+      </section>
+
+      <!-- BEST PRACTICE -->
+      <section>
+        <hr />
+        <h3>✔️ Best Practice</h3>
+
+        <ul>
+          <li>
+            Use <code>const</code> by default and switch to
+            <code>let</code> only when needed.
+          </li>
+          <li>
+            Use descriptive variable names:
+            <br />
+            <code>// Good</code> → <code>let totalPrice;</code>
+            <br />
+            <code>// Bad</code> → <code>let tp;</code>
+          </li>
+
+          <li>
+            Stick to camelCase naming:
+            <br />
+            <code>let userAge = 25;</code>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section>
+        <hr />
+        <h2>🎯 Challenge</h2>
+        <p>Create Your First Variables</p>
+
+        <ol>
+          <li>
+            Create two variables:
+            <strong>customerName</strong> and <strong>cartItems</strong>.
+          </li>
+          <li>
+            Use <code>const</code> for values that won’t change and
+            <code>let</code> for values that might change.
+          </li>
+          <li>Log each variable using <code>console.log()</code>.</li>
+        </ol>
+
+        <p><strong>Bonus:</strong> Create a sentence using both variables.</p>
+      </section>
+    </main>
+  </body>
+</html>

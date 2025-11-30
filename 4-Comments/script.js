@@ -26,5 +26,5 @@ console.log("This will run.");
     console.log("John Doe");
 }
 
-console.log(sum());
+console.log(printName());
 */
