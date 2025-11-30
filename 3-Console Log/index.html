@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Console Log</title>
+    <script src="/3-Console Log/script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html"
+          ><img src="/assets/images/logo.png" alt="logo" class="logo"
+        /></a>
+        <h1>JavaScript Tutorial</h1>
+      </div>
+      <div class="intro">
+        <h2>console.log()</h2>
+        <p>
+          💡console.log() is one of the most important debugging and learning
+          tools in JavaScript. Developers use the browser console to print
+          messages, values, and variables for testing.
+        </p>
+        <ul>
+          <li>console.log() outputs information to the browser’s console..</li>
+          <li>
+            It helps developers test code, check values, and understand what’s
+            happening in a program.
+          </li>
+          <li>
+            The console is found in the browser’s Developer Tools (F12 or
+            Right-click → Inspect → Console).
+          </li>
+          <li>
+            console.log() can display text, numbers, variables, and even
+            multiple values at once.
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </header>
+
+    <main>
+      <!-- WHAT IS THE CONSOLE? -->
+      <section>
+        <h3>What is the Console?</h3>
+        <p>
+          The console is a built-in tool in web browsers that allows developers
+          to view messages, run JavaScript code, and debug their applications.
+          It does not show anything on the webpage — only inside DevTools.
+        </p>
+        <p>To open the console:</p>
+        <ul>
+          <li>Press F12 on your keyboard.</li>
+          <li>
+            Or right-click on the webpage and select "Inspect" or "Inspect
+            Element."
+          </li>
+          <li>Then, navigate to the "Console" tab.</li>
+          <li>Or ctrl + shift + j</li>
+        </ul>
+        <p>
+          The console displays messages logged by the
+          <code>console.log()</code> function, as well as errors and warnings.
+        </p>
+      </section>
+      <!-- WHAT IS console.log()? -->
+      <section>
+        <hr />
+        <h3>What is console.log()?</h3>
+        <p>
+          <code>console.log()</code> is a JavaScript function that prints
+          messages to the console. It is commonly used for debugging and testing
+          code.
+        </p>
+        <p>Example:</p>
+        <pre><code>console.log("JS file is connected!");</code></pre>
+        <p>
+          When this code runs, "JS file is connected!" will appear in the
+          console.
+        </p>
+        <p>Examples logging different data types:</p>
+        <ul>
+          <li>console.log("Hello world") //Logs a string</li>
+          <li><code>console.log(42);</code> // Logs a number</li>
+          <li><code>console.log(true);</code> // Logs a boolean</li>
+          <li>
+            <code>console.log("Alice is", 30, "years old");</code> // Logs
+            multiple values
+          </li>
+          <li><code>console.log(name);</code> // Logs a variable</li>
+          <li>
+            <code>console.log(6 + 8);</code> // Logs a mathematic operation
+          </li>
+        </ul>
+      </section>
+
+      <!-- Debugging Errors in Script File -->
+      <section>
+        <hr />
+        <h3>🐞 Debugging Errors in Your Script File</h3>
+        <p>
+          If there are errors in your JavaScript code, they will be displayed in
+          the console. Common errors include syntax errors, reference errors,
+          and type errors.
+        </p>
+        <p>Example of a Reference Error:</p>
+        <pre><code>console.log(undeclaredVariable);</code></pre>
+        <p>
+          This will produce a ReferenceError in the console because
+          <code>undeclaredVariable</code> has not been defined.
+        </p>
+        <p>
+          To fix errors, check the error message in the console and review your
+          code for mistakes.
+        </p>
+      </section>
+      <!-- BEST PRACTICE -->
+      <section>
+        <hr />
+        <h3>✔️ Best Practice</h3>
+        <p>
+          Use <code>console.log()</code> frequently while developing to check
+          the values of variables and the flow of your program. It helps catch
+          errors early and understand how your code works.
+        </p>
+        <ul>
+          <li>
+            Log variable values at different points in your
+            <code class="">
+              console.log("Before:", count); count++; console.log("After:",
+              count);
+            </code>
+          </li>
+          <li>
+            Use descriptive messages to clarify what you are logging.
+            <code> console.log("Username entered:", username);</code>
+          </li>
+          <li>
+            Remove or comment out console.log statements in production code to
+            keep the console clean.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section>
+        <hr />
+        <h2>🎯 Challenge</h2>
+        <p>Use <code>console.log()</code> to print variables.</p>
+
+        <ol>
+          <li>
+            Create two variables: <strong>myName</strong> and
+            <strong>myFavoriteColor</strong>
+          </li>
+          <li>Use <code>console.log()</code> to print each variable.</li>
+          <li>
+            Print a combined message like:
+            <i>My name is Sam and my favorite color is blue.</i>
+          </li>
+          <li>⭐Bonus: Log all values in one line.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

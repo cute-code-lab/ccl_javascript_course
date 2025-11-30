@@ -38,6 +38,12 @@ main {
 
 header h2 {
   color: palevioletred;
+  font-size: 32px;
+}
+
+h3 {
+  color: palevioletred;
+  font-size: 24px;
 }
 
 code {
