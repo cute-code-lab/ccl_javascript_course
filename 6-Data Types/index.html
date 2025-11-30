@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Data Types</title>
+    <script src="/6-Data Types/script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" alt="logo" class="logo" />
+        </a>
+        <h1>JavaScript Tutorial</h1>
+      </div>
+
+      <div class="intro">
+        <h2>JavaScript Data Types</h2>
+        <p>
+          📦 Data types describe the kind of value stored inside a variable.
+          JavaScript has <strong>eight</strong> built-in data types.
+          Understanding them is essential, because different types behave
+          differently in your programs.
+        </p>
+
+        <ul>
+          <li>
+            A data type tells JavaScript what kind of value you're working with.
+          </li>
+          <li>
+            JavaScript has <strong>7 primitive</strong> data types and
+            <strong>1 non-primitive</strong> type.
+          </li>
+          <li>These types help you store, compare, and manipulate values.</li>
+          <li>
+            Each data type will be explained in detail in separate lessons
+            later.
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+    </header>
+
+    <main>
+      <!-- WHAT ARE DATA TYPES -->
+      <section>
+        <h3>1️⃣ What Are Data Types?</h3>
+        <p>
+          Every value in JavaScript has a data type. This helps the language
+          know how the value should behave — whether it acts like text, a
+          number, true/false, or something more complex.
+        </p>
+
+        <p>For example:</p>
+        <p><code>const name = "Alex"; // string</code></p>
+        <p><code>const age = 20; // number</code></p>
+        <p><code>const isStudent = true; // boolean</code></p>
+      </section>
+
+      <!-- PRIMITIVE TYPES -->
+      <section>
+        <h3>2️⃣ The 7 Primitive Data Types</h3>
+        <p>Primitive values are simple and not changeable.</p>
+
+        <ul>
+          <li>
+            <strong>String</strong> — text inside quotes <br /><code
+              >"Hello"</code
+            >
+          </li>
+
+          <li>
+            <strong>Number</strong> — any number (whole or decimal) <br /><code
+              >42</code
+            >, <code>3.14</code>
+          </li>
+
+          <li>
+            <strong>Boolean</strong> — true or false <br /><code>true</code>,
+            <code>false</code>
+          </li>
+
+          <li>
+            <strong>Undefined</strong> — a variable declared but not assigned
+            <br /><code>let x; // undefined</code>
+          </li>
+
+          <li>
+            <strong>Null</strong> — an intentional empty value <br /><code
+              >let user = null;</code
+            >
+          </li>
+
+          <li>
+            <strong>Symbol</strong> — unique identifiers (advanced, later
+            lesson) <br /><code>Symbol("id")</code>
+          </li>
+
+          <li>
+            <strong>BigInt</strong> — very large numbers <br /><code>123n</code>
+          </li>
+        </ul>
+      </section>
+
+      <!-- NON PRIMITIVE -->
+      <section>
+        <h3>3️⃣ The Non-Primitive Type</h3>
+
+        <p><strong>Object</strong> — a collection of key-value pairs.</p>
+
+        <p><code> const user = { name: "Alex", age: 20 }; </code></p>
+
+        <p>Objects will be covered in depth in a full lesson later.</p>
+      </section>
+
+      <!-- TYPE CHECKING WITH typeof -->
+      <section>
+        <h3>4️⃣ Checking Data Types with <code>typeof</code></h3>
+
+        <p>You can use <code>typeof</code> to see the data type of a value.</p>
+        <p><code>console.log(typeof "Hello"); // "string"</code></p>
+        <p><code>console.log(typeof 99); // "number"</code></p>
+        <p><code>console.log(typeof true); // "boolean"</code></p>
+
+        <p>You'll use this often when testing your code.</p>
+      </section>
+
+      <!-- BEST PRACTICE -->
+      <section>
+        <hr />
+        <h3>✔️ Best Practice</h3>
+
+        <ul>
+          <li>
+            Use <code>typeof</code> when you're unsure what type a value is.
+          </li>
+          <li>
+            Choose the right data type for the job (text → string, yes/no →
+            boolean).
+          </li>
+          <li>
+            Use <code>null</code> when you want to intentionally “clear” a
+            value.
+          </li>
+          <li>
+            Remember: objects and arrays are both considered
+            <strong>objects</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section>
+        <hr />
+        <h2>🎯 Challenge</h2>
+        <p>Identify Data Types</p>
+
+        <ol>
+          <li>
+            Create 5 variables using different data types: <br /><strong
+              >string, number, boolean, undefined, object</strong
+            >.
+          </li>
+          <li>Log each variable to the console.</li>
+          <li>Use <code>typeof</code> on each one and observe the result.</li>
+        </ol>
+
+        <p>
+          <strong>Bonus:</strong> Create a variable with <code>null</code> and
+          check its type.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
