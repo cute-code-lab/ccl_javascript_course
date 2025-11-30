@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL: Comments</title>
+    <script src="/4-Comments/script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html"
+          ><img src="/assets/images/logo.png" alt="logo" class="logo"
+        /></a>
+        <h1>JavaScript Tutorial</h1>
+      </div>
+      <div class="intro">
+        <h2>Comments</h2>
+        <p>
+          💡Comments help developers leave notes, explain code, and make
+          programs easier to understand. They are ignored by the browser but are
+          extremely important for learning and collaborating.
+        </p>
+        <ul>
+          <li>Comments do not run as code — they are ignored by JavaScript.</li>
+          <li>
+            They are useful for adding explanations, reminders, or labels.
+          </li>
+          <li>
+            JavaScript has two types of comments:
+            <code>Single-line comment: <strong>//</strong></code> &
+            <code> Multi-line comment: <strong>/*... */</strong></code>
+          </li>
+          <li>
+            Comments make code easier to understand for yourself and others.
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </header>
+
+    <main>
+      <!-- SINGLE-LINE COMMENTS -->
+      <section>
+        <h3>1️⃣ Single-Line Comments</h3>
+        <p>Use // to create a comment that stays on one line.</p>
+        <p><code>// This prints a message to the console</code></p>
+        <p><code>console.log("Hello!");</code></p>
+        <p><code>// Store the user's age</code></p>
+        <p><code>let age = 20;</code></p>
+        <p>
+          <strong
+            >❗Single-line comments can be on the same line AFTER code you'd
+            like to run</strong
+          >
+        </p>
+        <p><code>const city = "Atlanta"; // user's city</code></p>
+      </section>
+      <!-- MULTI-LINE COMMENTS -->
+      <section>
+        <h3>2️⃣ Multi-Line Comments</h3>
+        <p>
+          Use /* ... */ when you need longer explanations or multiple lines.
+        </p>
+        <div>
+          <code>/* This section calculates the total score.</code>
+          <br />
+          <code>We'll update this later. */</code>
+        </div>
+
+        <strong>
+          <code> let score = 0;</code>
+        </strong>
+      </section>
+      <!-- Disable Code -->
+      <section>
+        <h3>3️⃣ Using Comments to Disable Code</h3>
+        <p>
+          You can use single-line and multi-line comments to disable code
+          temporarily for testing or debugging.
+        </p>
+
+        <code> // console.log("This will NOT run"); </code>
+        <br />
+        <code> console.log("This WILL run");</code>
+      </section>
+
+      <!-- BEST PRACTICE -->
+      <section>
+        <hr />
+        <h3>✔️ Best Practice</h3>
+        <p>
+          Use comments to explain <strong>why</strong> code does something, not
+          <strong>what</strong> it does. Keep comments clear and concise.
+        </p>
+        <ul>
+          <li>
+            Use comments to explain why, not just what.
+            <br />
+            <code>// Add 1 to fix the off-by-one issue </code>
+            <br />
+            <strong> count = count + 1;</strong>
+          </li>
+          <li>
+            Use comments to break your script into sections:
+            <br />
+            <code>// ----- User Info ----- </code>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section>
+        <hr />
+        <h2>🎯 Challenge</h2>
+        <p>Comment Your Code</p>
+
+        <ol>
+          <li>
+            Create two variables: <strong>city </strong>&
+            <strong>temperature</strong>
+          </li>
+          <li>
+            Log both values using
+            <code
+              >console.log("The temperature in Austin is 30 degrees celsius
+              today.")</code
+            >.
+          </li>
+          <li>
+            Include three comments: Two single-line comments explaining each
+            variable and one multi-line comment explaining why you're logging
+            the values.
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
